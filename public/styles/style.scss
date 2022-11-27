@@ -18,3 +18,65 @@ header {
     letter-spacing: 2px;
   }
 }
+
+form {
+  min-height: 25vh;
+  padding: 1rem;
+  @include displayFlex();
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    width: 35%;
+    @media screen and (max-width: 768px) {
+      width: 80%;
+    }
+    .form__field {
+      font-family: inherit;
+      width: 100%;
+      border: 0;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+      outline: 0;
+      font-size: 1.1rem;
+      color: $darkblueColor;
+      padding: 7px 0;
+      background: transparent;
+      transition: border-color 0.2s;
+      &::placeholder {
+        color: transparent;
+      }
+      &:placeholder-shown ~ .form__label {
+        font-size: 1.2rem;
+        cursor: text;
+        top: 21px;
+      }
+      &:focus {
+        ~ .form__label {
+          position: absolute;
+          top: 0;
+          display: block;
+          transition: 0.2s;
+          font-size: 1rem;
+          font-weight: 400;
+        }
+        padding-bottom: 6px;
+        font-weight: 300;
+        border-image: $borderImage;
+        border-image-slice: 1;
+      }
+      &:required {
+        box-shadow: none;
+      }
+      &:invalid {
+        box-shadow: none;
+      }
+    }
+    .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 0.9rem;
+      color: $grayColor;
+    }
+  }
+}

@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include("./partials/head.ejs") %>
+  <%- include("./head.ejs") %>
   <body>
-    <%- include("./partials/header.ejs") %>
+    <%- include("./header.ejs") %>
+    <form>
+      <div class="form__group field">
+        <input
+          type="search"
+          class="form__field"
+          placeholder="Paste Youtube Link here"
+          name="name"
+          id="name"
+          required
+        />
+        <label for="name" class="form__label">Paste Youtube link here</label>
+      </div>
+    </form>
   </body>
 </html>
