@@ -7,15 +7,14 @@ body {
   font-family: "Overpass", sans-serif;
 }
 
-header {
+.header {
   min-height: 20vh;
   padding: 1rem;
   @include displayFlex();
   background: $darkblueColor;
   color: $whiteColor;
-  h2 {
-    font-size: 2.2rem;
-    letter-spacing: 2px;
+  .header__title {
+    font-size: 2.5rem;
   }
 }
 
@@ -90,11 +89,24 @@ section {
         font-size: 3rem;
         color: #019901;
       }
+      .container__succsess--download {
+        border: 1px solid #019901;
+        border-radius: 3px;
+        color: #019901;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2em;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+      }
     }
     .container__error {
       .container__error--title {
         font-size: 1.3rem;
-        color: #f72714;
+        color: #ff1803;
         text-decoration: underline;
       }
     }
