@@ -80,3 +80,23 @@ form {
     }
   }
 }
+
+section {
+  .container {
+    min-height: 55vh;
+    @include displayFlex();
+    .container__succsess {
+      .container__succsess--title {
+        font-size: 3rem;
+        color: #019901;
+      }
+    }
+    .container__error {
+      .container__error--title {
+        font-size: 1.3rem;
+        color: #f72714;
+        text-decoration: underline;
+      }
+    }
+  }
+}

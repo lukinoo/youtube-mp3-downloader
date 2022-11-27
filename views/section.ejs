@@ -1,0 +1,16 @@
+<section>
+  <div class="container">
+    <% if (typeof succsess !== "undefined" && succsess) { %>
+    <div class="container__succsess">
+      <h3 class="container__succsess--title">song title 🚀</h3>
+      <a class="container__succsess--download" href="<%= song_url %>"
+        >download</a
+      >
+    </div>
+    <% } else { %>
+    <div class="container__error">
+      <h3 class="container__error--title">something went wrong! 😕</h3>
+    </div>
+    <%} %>
+  </div>
+</section>
