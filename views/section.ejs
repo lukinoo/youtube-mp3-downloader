@@ -7,9 +7,9 @@
         >download</a
       >
     </div>
-    <% } else { %>
+    <% } else if (typeof succsess !== "undefined" && !succsess) { %>
     <div class="container__error">
-      <h3 class="container__error--title">something went wrong! 😕</h3>
+      <h3 class="container__error--title"><%= message %></h3>
     </div>
     <%} %>
   </div>
