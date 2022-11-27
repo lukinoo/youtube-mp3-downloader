@@ -20,7 +20,7 @@ app.get("/", (_req: Request, res: Response): void => {
 app.post("/convert-mp3", async (req: Request, res: Response) => {
   const { mp3Id }: { mp3Id: string } = req.body;
 
-  if (mp3Id === undefined || mp3Id === "".trim() || mp3Id === null) {
+  if (mp3Id === undefined || mp3Id.trim() === "" || mp3Id === null) {
     return res.render("index", {
       succsess: false,
       message: "Please Enter youtube video Url...",
