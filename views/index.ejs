@@ -2,19 +2,7 @@
 <html lang="en">
   <%- include("./head.ejs") %>
   <body>
-    <%- include("./header.ejs") %>
-    <form>
-      <div class="form__group field">
-        <input
-          type="search"
-          class="form__field"
-          placeholder="Paste Youtube Link here"
-          name="name"
-          id="name"
-          required
-        />
-        <label for="name" class="form__label">Paste Youtube link here</label>
-      </div>
-    </form>
+    <%- include("./header.ejs") %> <%- include("./form.ejs") %> <%-
+    include("./section.ejs") %>
   </body>
 </html>

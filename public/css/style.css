@@ -89,4 +89,20 @@ form .form__group .form__label {
   transition: 0.2s;
   font-size: 0.9rem;
   color: #9b9b9b;
+}
+
+section .container {
+  min-height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .container .container__succsess .container__succsess--title {
+  font-size: 3rem;
+  color: #019901;
+}
+section .container .container__error .container__error--title {
+  font-size: 1.3rem;
+  color: #f72714;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
