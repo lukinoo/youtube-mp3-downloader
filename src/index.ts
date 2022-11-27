@@ -8,7 +8,7 @@ app.use(cors());
 app.set("view engine", "ejs");
 
 app.get("/", (_req: Request, res: Response): void => {
-  res.render("index.ejs", { name: "world" });
+  res.render("index.ejs", { name: "world", title: "mp3 downloader" });
 });
 
 app.listen(5500);
