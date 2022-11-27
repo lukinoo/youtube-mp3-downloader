@@ -5,9 +5,10 @@ const app = express();
 
 app.use(cors());
 
-app.get("/", (req: Request, res: Response) => {
-  console.log(req);
-  res.send("hello, world");
+app.set("view engine", "ejs");
+
+app.get("/", (_req: Request, res: Response): void => {
+  res.render("index.ejs", { name: "world" });
 });
 
 app.listen(5500);
