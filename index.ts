@@ -42,7 +42,6 @@ app.post("/convert-mp3", async (req: Request, res: Response) => {
     axios
       .get(`https://youtube-mp36.p.rapidapi.com/dl?id=${mp3Id}`, options)
       .then((resp) => {
-        console.log(resp);
         if (resp.data.status === "ok") {
           return res.render("index", {
             succsess: true,
