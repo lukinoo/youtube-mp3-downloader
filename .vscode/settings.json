@@ -8,7 +8,7 @@
       "savePath": "./public/css"
     }
   ],
-  "files.autoSave": "off",
+  "files.autoSave": "afterDelay",
   "editor.formatOnSave": true,
   "workbench.iconTheme": "material-icon-theme",
   "prettier.singleQuote": false,
