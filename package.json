@@ -7,7 +7,7 @@
     "watch": "tsc --w",
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "nodemon --watch \"src/**\" --ext \"ts,json\" --exec \"ts-node src/index.ts\""
+    "dev": "nodemon --watch \"src/**\" --ext \"ts,json\" --exec \"ts-node index.ts\""
   },
   "repository": {
     "type": "git",
