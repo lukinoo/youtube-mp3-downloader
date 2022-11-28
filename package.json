@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node index.js",
-    "dev": "nodemon --watch \"src/**\" --ext \"ts,json\" --exec \"ts-node index.ts\""
+    "dev": "nodemon --watch --ext \"ts,json\" --exec \"ts-node index.ts\""
   },
   "repository": {
     "type": "git",
